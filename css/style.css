@@ -1,0 +1,599 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:wght@100&display=swap');
+/* font-family: 'Oswald', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+*{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #F0F2F0;
+    background: linear-gradient(to right, #000C40, #F0F2F0);
+}
+
+
+/* header */
+
+.header{
+    background: linear-gradient(to right, #928DAB, #1F1C2C);
+    width: 85%;
+    margin: 1.6em auto;
+}
+
+.navbar nav ul li{
+    height: 2.4em;
+}
+
+.navbar nav ul li:focus,
+.navbar nav ul li:hover{
+        background: #1C658C;
+        outline: 0;
+    }
+
+
+.navbar nav ul{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    list-style: none;
+    text-align: center;
+}
+
+.navbar nav ul li a{
+    text-decoration: none;
+    color: #F0F2F0;
+    font-size: 1.4rem;
+    text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+    align-items: center;
+    font-family:'Oswald', sans-serif;
+    font-weight: 300;
+}
+
+
+/* footer */
+
+.footer{
+    grid-column: 1/-1;
+    font-family:'Roboto', sans-serif;
+    color: black;
+    font-weight: 700;
+}
+
+.contacto{
+    margin-top: 1.8em;
+}
+
+.contacto p{
+    text-align: center;
+}
+
+.logosfooter{
+    text-align: center;
+}
+
+.logosfooter img{
+    width: 4em;
+    padding: 1em;
+}
+
+/* main productos */
+
+
+
+.seccionproductos{
+    padding: 20px;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    background: rgba(255, 255, 255, .1);
+    gap: 3em;
+
+}
+
+.contenedorconimg img{
+    width: 140px;
+    height: 140px;
+}
+
+.contenedorconimg{
+    background: rgba(255, 255, 255, .3);
+    text-align: center;
+}
+
+.contenedorconimg button:hover,
+.contenedorconimg button:focus{
+        color: black ;
+        background: #F5EA5A;
+        transition: 0.6s ease-out;
+        outline: 0;
+    }
+
+.h1productos{
+    font-family: 'Oswald', sans-serif;
+    color: black;
+    font-weight: 550;
+    font-size: 2.5em;
+    margin: 30px 0 20px 0;
+    text-align: center;
+}
+
+.subtitulosproductos{
+    padding: 4px;
+    color: #F0F2F0;
+    text-transform: uppercase;
+    background: linear-gradient(to right, #859398, #283048);
+    margin:5px 0;
+}
+
+.subtitulosproductos h2{
+    margin-left: 8%;
+    font-weight: 300;
+    font-size: 1.5em;
+    font-family: 'Oswald', sans-serif;
+}
+
+.contenedorconimg div button{
+    width: 50%;
+    background: linear-gradient(to right, #859398, #283048);
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    border: none;
+    font-size: 1.1em;
+    font-weight: 400;
+}
+
+/* contacto */
+
+    .maincontacto{
+        color: #F0F2F0;
+        font-family: 'Roboto', sans-serif;
+        padding: 0 1.5em;
+    }
+    
+    .h1contacto{
+        font-family: 'Oswald', sans-serif;
+        color: #000;
+        font-weight: 300;
+        font-size: 2em;
+        margin: 1rem 0 1.2rem 0;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    
+    .content{
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 1.5em;
+    }
+
+    .contact-form h2{
+        font-size: 2em;
+    }
+    
+    .contact-form form p{
+        margin: 0;
+        padding: 1em;
+    }
+    
+    .contact-form form{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+    .contact-form form .block{
+        grid-column: 1/-1;
+    }
+    
+    .contact-form button,
+    .contact-form input,
+    .contact-form textarea{
+        width: 100%;
+        padding: 0.5em;
+        margin: 0.3em;
+        border: none;
+        background: none;
+        border-bottom: 1px solid blue ;
+        color: #F0F2F0;
+    }
+
+    .contact-form form button{
+        background-color: #1F1C2C;
+        color: #F0F2F0;
+        border: 0;
+        text-transform: uppercase;
+        padding: 0.7em;
+    }
+    
+    .contact-form form button:hover,
+    .contact-form form button:focus{
+        color: blue ;
+        background: #859398;
+        transition: 0.6s ease-out;
+        outline: 0;
+    }
+    
+    .contact-info h3,
+    .contact-info ul{
+        text-align: center;
+        margin: 0 0 1rem 0;
+    }
+    
+    .contact-info ul{
+        list-style: none;
+        padding: 0;
+    }
+
+    .contact-info h3{
+        font-family: 'Oswald', sans-serif;
+        font-size: 1.5em;
+    }
+    
+    .contact-info ul li{
+        padding: 0.5em;
+        font-family: 'Roboto', sans-serif;
+}
+
+/* media screen */
+
+@media screen and (max-width: 768px){
+    /* header */
+    .header{
+        width: 100%;
+        margin: 0.5em auto;
+    }
+
+    .navbar nav ul li{
+        height: 1.8em;
+    }
+
+    .navbar nav ul li a{
+        font-size: 1em;
+    }
+
+    /*productos*/
+    .seccionproductos{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1em;
+    }
+
+    .h1productos{
+        font-size: 2em;
+    }
+
+    .subtitulosproductos h2{
+        font-size: 1.3em;
+    }
+}
+
+
+/* low screen */
+
+@media screen and (max-width: 320px) { 
+    /* header */
+    .header{
+        width: 25%;
+        background: none;
+        margin: auto;
+    }
+
+    .navbar nav ul{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    .navbar nav ul li a{
+        font-size: 1em;
+    }
+
+    /* contacto */
+    .contact-form form{
+        display: grid;
+        grid-template-columns:1fr;
+    }
+
+    .content{
+        padding-top: 0;
+    }
+
+    /*productos*/
+    .seccionproductos{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1em;
+    }
+
+    .h1productos{
+        font-size: 2em;
+        margin: 0;
+    }
+
+    .subtitulosproductos h2{
+        font-size: 1.3em;
+    }
+}
+
+/* resto del ccs sin resposive */
+
+/* Main index */
+/* BlackFriday inicio */
+
+.blackfriday{
+    background-image: url("../assets/img/Fondo1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.contenedorbf1 img{
+    width: 250px;
+    margin-top: 110px;
+    margin-left: 242px;
+}
+
+.contenedorbf2{
+    margin-left: 230px;
+    color: white;
+    font-family:'Oswald', sans-serif;
+    font-size: 43px;
+}
+
+.parrafobf{
+    margin-left: 26px;  
+}
+
+.contenedorbf3 img{
+    width: 100px;
+    margin-left: 330px;
+    margin-top: 10px;
+}
+
+.contenedorbf4{
+    color: white;
+    font-family:'Oswald', sans-serif;
+    font-size: 43px;
+    margin-left: 210px;
+}
+
+.btncomprarbf{
+    padding: 15px;
+}
+
+.btncomprarbf button{
+    font-size: large;
+    font-family:'Oswald', sans-serif;
+    height: 35px;
+    width: 110px;
+    margin-left: 320px;
+    margin-top: 15px;
+    border-radius: 9px;
+    background: linear-gradient(to right, #f5af19, #f12711);
+    cursor: pointer; 
+}
+
+
+/* BlackFriday Fin */
+
+/* SectionOne inicio */
+
+.DestTit h2{
+    margin-top: 40px;
+    text-align: center;
+    color: white;
+    font-family:'Oswald', sans-serif;
+    font-size: 7ch;
+    background: linear-gradient(to right, #859398, #283048);
+    color: black;
+}
+
+.sectionOne{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: xx-large;
+}
+
+.sectionOne img{
+    width: 150px;
+    height: auto;
+}
+
+.bntComprarVer{
+    font-size: large;
+    font-family:'Oswald', sans-serif;
+    border-radius: 4px;
+    cursor: pointer; 
+    padding: 4px;
+    background: linear-gradient(to right, #536976, #292e49);
+    color: white;
+}
+
+.DescTit h2{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    text-align: center;
+    color: white;
+    font-family:'Oswald', sans-serif;
+    font-size: 7ch;
+    background: linear-gradient(to right, #859398, #283048);
+    color: black;
+}
+
+.btnvertodas{
+    display: flex;
+    justify-content: center;
+}
+
+.btnvertodas button{
+    margin-top: 45px;
+    font-size: large;
+    font-family:'Oswald', sans-serif;
+    border-radius: 4px;
+    background: linear-gradient(to right, #536976, #292e49);
+    cursor: pointer; 
+    padding: 4px;
+    color: white;
+}
+
+/* Section One Fin */
+
+/* SectionLogo Inicio */
+
+.sectionlogo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: large;
+    font-family:'Roboto', sans-serif;
+    margin: 80px 0px 70px 35px;
+}
+
+.sectionlogo img{
+    width: 85px;
+}
+
+/* SectionLogo Fin */
+
+/* Preguntas inicio */
+
+.contenedorpreg{
+    background-color: rgba(0,0,0,.5);
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    margin-top: 40px;
+    padding-bottom: 40px;
+    border-radius: 4px;
+    margin-bottom: 50px;
+    padding: 7px 40px;
+}
+
+.titulopreg{
+    font-family:'Oswald', sans-serif;
+    font-size: 34px;
+    color: white;
+    padding: 20px;
+    text-transform: uppercase;
+}
+
+.resaltado{
+    font-family:'Roboto', sans-serif;
+    font-size: 22px;
+    color: #F66B0E;
+}
+
+.comun{
+    color: white;
+    font-size: 18px;
+}
+
+/* Preguntas Fin*/
+
+
+/* Tabla de talles Inicio */
+
+.maintalles{
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+    font-family:'Roboto', sans-serif;
+    padding: 17px;
+}
+
+.contenedortabla{
+    border: groove 3px rgb(252, 252, 252);
+    background-color: rgba(0,0,0,.5);
+}
+
+.contenedortabla h2{
+    background: linear-gradient(to right, #f0f2f0, #000c40);
+}
+
+table{
+    color: white;
+    font-size: 16px;
+    table-layout: fixed;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+thead{
+    background: linear-gradient(to right, #ba8b02, #181818);
+}
+
+th{
+    padding: 8px 4px;
+    font-weight: 800;
+}
+
+td{
+    padding: 12px;
+    border-bottom: solid 1px;
+}
+
+.contenedortabla h2{
+    text-align: center;
+    font-size: 24px;
+    padding: 6px;
+    color: white;
+}
+
+/* Tabla de Talles Fin */
+
+/* Header inicio */
+
+
+.contenedorSearch{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedorSearch form{
+    background: white;
+    width: 660px;
+    height: 30px;
+    display: flex;
+}
+
+.contenedorSearch form input{
+    flex: 1;
+    border: none;
+    outline: none;
+    text-align: center;
+    font-size: 15px;
+}
+
+.contenedorSearch form button{
+    background: #F66B0E;
+    text-align: center;
+    padding: 10px 50px;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+
+/* Header Fin*/
+
+.h1index,
+.h1talles{
+    display: flex;
+    font-family: 'Oswald', sans-serif;
+    color: #F0F2F0;
+    font-weight: 1000;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.7rem;
+    margin: 30px 0 20px 0;
+}
+
+
