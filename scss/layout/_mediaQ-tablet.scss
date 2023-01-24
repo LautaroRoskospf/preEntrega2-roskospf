@@ -1,0 +1,101 @@
+/* large screen*/
+@media screen and (max-width: 1023px){
+    /* index */
+    header nav ul li {
+        height: 2em; }
+        header nav ul li a {
+            font-size: 1em;
+        }
+    .p2{
+        display: none;
+    }
+    .sections-index{
+        .sections-divs img{
+            @include tamaño(120px, 120px);
+        }
+    }
+}
+
+/* medium screen */
+@media screen and (max-width: 768px){
+    /* header */
+    header nav ul li{
+        height: 1.8em;
+        a{
+            font-size: 1em;
+        }
+    }
+    /* index */
+    .index-title{
+        font-size: 1.6em
+    }
+    .index-sub h2{
+        font-size: 1.1em
+    }
+.blackfriday{
+    div img{
+        width: 4.7em;
+        margin-right: 15em;
+    }
+    .BF-imgCard{
+        width: 2.2em;
+        margin-right: 15em;
+    }
+    div p{
+        font-size: 1em;
+        margin-right: 15em;
+    }
+    .BF-Button{
+        @include tamaño(4.5em, 1.7em);
+        font-size: 1em;
+        margin-right: 15em;
+    }
+    
+}
+
+.sections-index{
+    @include grid(2, 1em);
+    .sections-divs img{
+        @include tamaño(100px, 100px);
+    }
+}
+
+.BTN-ver-todas{
+    button{
+        width: auto;
+        padding: 10px;
+    }
+}
+
+.index-logos{
+    max-width: 80%;
+    img{
+        width: 3em;
+    }
+}
+
+/* productos */
+.productos-title{
+    font-size: 1.9em;
+}
+
+.productos-subtitle{
+    font-size: 1em;
+}
+
+.section-one{
+    @include grid(2, 1em);
+}
+
+/* preguntas frecuentes */
+.preg-container{
+    max-width: 80%;
+    h1{
+        font-size: 1.8em;
+    }
+}
+/* guia de tallas */
+.title-talles{
+    font-size: 1.8em;
+}
+}

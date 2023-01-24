@@ -1,0 +1,93 @@
+/* horizontal screen */
+@media screen and (max-width: 480px){
+    /* header */
+    header{
+        width: 50%;
+        margin: auto;
+        nav ul{
+            @include grid(1, 0);
+            li a{
+                font-size: 1em;
+            }
+        }
+    }
+    /* index */
+    .blackfriday{
+        display: none;
+    }
+    .index-title{
+        font-size: 1.6em
+    }
+    .index-sub h2{
+        font-size: 1em
+    }
+    .sections-index{
+        @include grid(1, 1em);
+        .sections-divs img{
+            @include tamaño(100px, 100px);
+        }
+    }
+    .index-logos p{
+        display: none;
+    }
+    /* productos */
+    .productos-title{
+        font-size: 1.5em;
+    }
+    
+    .productos-subtitle{
+        font-size: .8em;
+    }
+    /* preguntas frecuentes */
+    .preg-container{
+        max-width: 90%;
+        h1{
+            font-size: 1.6em;
+        }
+    }
+    /* guia de tallas */
+    .title-talles{
+        font-size: 1.6em;
+    }
+    /* contacto */
+    .contact-form{
+        h1{
+            font-size: 1.5em;
+        }
+    }
+}
+
+@media screen and (max-width: 320px){
+    /* productos */
+    .section-one{
+        @include grid(1, 1em);
+    }
+    /* preguntas frecuentes */
+    .preg-container{
+        max-width: 95%;
+        h1{
+            font-size: 1.5em;
+        }
+    }
+    /* contacto */
+    .main-contacto .content .contact-form{
+        h1{
+            font-size: 1.3em;
+        }
+        form{
+            @include grid(1, 0);
+        }
+    }
+    /* guia de tallas */
+    .title-talles{
+        font-size: 1.3em;
+    }
+    .section-talles .container-tabla{
+        h2{
+            font-size: 1.2m;
+        }
+        table{
+            font-size: .8em;
+        }
+    }
+}

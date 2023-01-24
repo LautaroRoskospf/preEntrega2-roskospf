@@ -1,0 +1,171 @@
+/* background body */
+body{
+    background: $back_main;
+}
+
+/* index */
+/* search bar */
+.search-bar{
+    @include flex(row, center, center);
+    padding: 10px;
+    form{
+        background: map-get($map: $colors, $key: uno);
+        @include tamaño(25em, 1.5em);
+        display: flex;
+        input{
+            flex: 1;
+            border: none;
+            outline: none;
+            text-align: center;
+            font-size: 15px;
+        }
+        button{
+            background: map-get($map: $colors, $key: cuatro);
+            text-align: center;
+            padding: .25em 2em;
+            border: none;
+            outline: none;
+            color: white;
+            cursor: pointer;
+            font-size: 15px;
+            margin: auto;
+        }
+    }
+}
+
+/* main */
+.blackfriday{
+    background-image: url("../assets/img/Fondo1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    @include grid(1, 0.8em);
+    text-align: center;
+    max-width: 80%;
+    margin: auto;
+    padding: 1.5em;
+    margin-top: .8em;
+    text-transform: uppercase;
+    div img{
+        width: 9.5em;
+        margin: 2em 25em 0 0;
+    }
+    .BF-imgCard{
+        width: 4.5em;
+        margin-right: 25em;
+    }
+    div p{
+        color: map-get($map: $colors, $key: uno);
+        font-family: $typo_principal;
+        font-size: 1.5em;
+        margin-right: 17em;
+        font-weight: 600;
+    }
+    .BF-Button{
+        font-size: large;
+        font-family: $typo_principal;
+        @include tamaño(6em, 1.7em);
+        border-radius: 9px;
+        background: map-get($map: $colors, $key: cuatro);
+        margin-right: 23em;
+        cursor: pointer;
+        &:hover{
+            color: map-get($map: $colors, $key: uno);
+            transition: 0.3s ease-out;
+            outline: 0;
+            background: map-get($map: $colors, $key: cinco);
+        }
+    }
+}
+
+/* title y subtitle index */
+.index-title{
+    font-family: $typo_titulos;
+    color: $color_font_principal;
+    font-size: 2.5em;
+    margin: 30px 0 20px 0;
+    text-align: center;
+}
+
+.index-sub{
+    padding: 4px;
+    color: map-get($map: $colors, $key: uno);
+    text-transform: uppercase;
+    background: map-get($map: $colors, $key: siete);
+    margin: 1em;    
+    h2{
+        margin-left: 8%;
+        font-size: 1.5em;
+        font-family: $typo_titulos;
+    }
+}
+
+/* secciones main-index */
+.sections-index{
+    padding: 20px;
+    margin-top: 10px;
+    @include grid(4,3em);
+    background: map-get($map: $cristal, $key: septimo);
+        .sections-divs{
+            background: map-get($map: $cristal, $key: quinto);
+            text-align: center;
+        img{
+            @include tamaño(140px, 140px);
+            margin: 1em;
+        }
+    p{
+        font-family: $typo_principal;
+        color: $color_font_principal;
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+    button{
+        @include tamaño(60%, 1.4em);
+        background: map-get($map: $colors, $key: siete);
+        color: map-get($map: $colors, $key: uno);
+        font-family: $color_font_principal;
+        font-size: 1em;
+        border: none;
+        margin: .5em;
+            &:hover{
+                color: map-get($map: $colors, $key: dos);
+                transition: ease-out;
+                background: map-get($map: $colors, $key: cuatro);
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.BTN-ver-todas{
+    margin: 1em;
+    text-align: center;
+    button{
+        @include tamaño(30%, 2.5em);
+        background: map-get($map: $colors, $key: dos);
+        color: map-get($map: $colors, $key: uno);
+        border: 0;
+        text-transform: uppercase;
+        &:hover{
+            color: map-get($map: $colors, $key: dos);
+            transition: ease-out;
+            background: map-get($map: $colors, $key: cuatro);
+            font-weight: bold;
+        }
+    }
+}
+
+/* logos */
+.index-logos{
+    @include grid(3, 1em);
+    text-align: center;
+    max-width: 60%;
+    margin: auto;
+    font-family: $typo_principal;
+    color: map-get($map: $colors, $key: dos);
+    font-weight: 300;
+    margin: 5em auto 3em auto;
+    img{
+        width: 4em;
+    }
+}

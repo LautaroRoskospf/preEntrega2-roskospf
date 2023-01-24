@@ -1,0 +1,72 @@
+/* contacto */
+.main-contacto{
+    color: map-get($map: $colors, $key: dos);
+    font-family: $typo_principal;
+    padding: 0 1.5em;
+    .content{
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 1.5em;
+        .contact-form{
+            h1{
+                font-size: 2em;
+                text-transform: uppercase;
+                margin: 2rem 0 2rem 0;
+                font-family: $typo_titulos;
+            }
+            form{
+                @include grid(2, 0);
+                p{
+                    margin: 0;
+                    padding: 1em;
+                    font-weight: bold;
+                }
+                .block{
+                    grid-column: 1/-1;
+                }
+                textarea, input, button{
+                    width: 100%;
+                    padding: .5em;
+                    margin: .3em;
+                    border: none;
+                    background: none;
+                    border-bottom: 1px solid map-get($map: $colors, $key: cinco);
+                    color: map-get($map: $colors, $key: uno);
+                }
+                button{
+                    background-color: map-get($map: $colors, $key: dos);
+                    color: map-get($map: $colors, $key: uno);
+                    border: 0;
+                    text-transform: uppercase;
+                    padding: .7em;
+                    &:hover, :focus{
+                        color: map-get($map: $colors, $key: dos);
+                        background: map-get($map: $colors, $key: cuatro);
+                        transition: .6s ease-out;
+                        outline: 0;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+        .contact-info{
+            h3, ul{
+                text-align: center;
+                margin: 0 0 1rem 0;
+            }
+            h3{
+                font-family: $typo_titulos;
+                font-size: 1,5em;
+            }
+            ul{
+                list-style: none;
+                padding: 0;
+                li{
+                    padding: .5em;
+                    font-family: $typo_principal;
+                }
+            }
+        }
+    }
+}
