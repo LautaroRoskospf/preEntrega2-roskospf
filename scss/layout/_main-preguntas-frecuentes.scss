@@ -1,6 +1,6 @@
 /* preguntas frecuentes */
 .preg-container{
-    background-color: map-get($map: $cristal, $key: decimo);
+    background-color: map-get($map: $cristal, $key: octavo);
     max-width: 60%;
     margin: auto;
     border-radius: 4px;
@@ -11,18 +11,18 @@
     h1{
         font-family: $typo_titulos;
         font-size: 2.2em;
-        color: map-get($map: $colors, $key: uno);
+        color: map-get($map: $colors, $key: dos);
         padding-bottom: .8em;
         text-transform: uppercase;
     }
-    h3{
+    .PTR{
         font-size: 1.3em;
-        color: map-get($map: $colors, $key: cinco);
-        font-weight: 500;
+        color: map-get($map: $colors, $key: dos);
+        font-weight: bold;
+        margin-top: 1em;
     }
     p{
         color: map-get($map: $colors, $key: uno);
         font-size: 1.1em;
-        margin-bottom: 1.2em;
     }
 }

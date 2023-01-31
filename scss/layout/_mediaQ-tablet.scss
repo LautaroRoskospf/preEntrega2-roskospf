@@ -1,11 +1,6 @@
 /* large screen*/
 @media screen and (max-width: 1023px){
     /* index */
-    header nav ul li {
-        height: 2em; }
-        header nav ul li a {
-            font-size: 1em;
-        }
     .p2{
         display: none;
     }
@@ -14,15 +9,54 @@
             @include tamaño(120px, 120px);
         }
     }
+    .BTN-ver-todas{
+        button{
+            width: 30%;
+            &:hover{
+                width: 40%;
+            }
+        }
+    }
 }
 
 /* medium screen */
 @media screen and (max-width: 768px){
     /* header */
-    header nav ul li{
-        height: 1.8em;
-        a{
-            font-size: 1em;
+    header{
+        #check:checked ~ ul{
+            left: 0;
+            transition: all .5s;
+        }
+        nav{
+            label{
+                display: block;
+                i{
+                    display: block;
+                    cursor: pointer;
+                    margin-right: 15px;
+                    img{
+                        filter: invert(1);
+                    }
+                }
+            }
+            ul{
+                @include tamaño(100%, 100vh);
+                display: block;
+                position: fixed;
+                top: 50px;
+                left: -100%;
+                background: map-get($map: $colors, $key: tres);
+                right: 0;
+                li{
+                    @include flex(row, center, center);
+                    padding: 2rem;
+                    margin: 0;
+                    border-bottom: 2px solid #D94A3D;
+                    a{
+                        color: map-get($map: $colors, $key: uno);
+                    }
+                }
+            }
         }
     }
     /* index */
@@ -62,8 +96,11 @@
 
 .BTN-ver-todas{
     button{
-        width: auto;
+        width: 40%;
         padding: 10px;
+        &:hover{
+            width: 50%;
+        }
     }
 }
 

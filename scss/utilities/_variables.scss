@@ -3,28 +3,31 @@ $typo_principal: 'Roboto', sans-serif;
 
 $typo_titulos: 'Michroma', sans-serif;
 
-$back_main: #CFD8DC;
+$back_main: #D2D6D9;
 
-$back_header: linear-gradient(to right,#283048, #859398);
+$back_header: #6C7073;
 
-$back_hover: rgba(249, 237, 105, 0.8);
+$back_hover: rgb(217, 74, 74);
 
-$color_font_principal: #222831;
+$color_font_principal: #00080D;
 
-$color_font_secundario: #393E46;
+$color_font_secundario: #6C7073;
+
+$shadow: 1px 1px 1px 1px rgba(32,32,32,0.3);
+
 
 /* maps */
 
 $colors:(
-    'uno': #EEEEEE,
-    'dos': #222831,
-    'tres': #393E46,
-    'cuatro': #F9ED69,
-    'cinco': #F08A5D,
-    'seis': #B83B5E,
-    'siete': linear-gradient(to right,#283048, #859398),
-    'ocho': #859398,
-    'nueve': linear-gradient(to right, #ba8b02, #181818),
+    'uno': #FFFFFF,
+    'dos': #00080D,
+    'tres': #6C7073,
+    'cuatro': #D94A3D,
+    'cinco': #D94A4A,
+    'seis': #D2D6D9,
+    'siete': linear-gradient(to right,#00080D, #6C7073),
+    'ocho': #D2D6D9,
+    'nueve': linear-gradient(to right, #D94A4A, #00080D),
 );
 
 $cristal:(
@@ -40,13 +43,4 @@ $cristal:(
     'decimo': rgba(0,0,0,.5)
 );
 
-$palette:(
-    'dark-primary':#455A64,
-    'light-primary': #CFD8DC,
-    'primary': #607D8B,
-    'text': #FFFFFF,
-    'accent': #536DFE,
-    'primary-text': #212121,
-    'secondary-text': #757575,
-    'divider-color': #BDBDBD
-)
+

@@ -14,10 +14,10 @@
     font-family: $typo_principal;
     padding: 17px;
     .container-tabla{
-        border: groove 3px map-get($map: $colors, $key: uno);
+        border: groove 2px map-get($map: $colors, $key: dos);
         background-color: map-get($map: $cristal, $key: noveno);
         h2{
-            background: map-get($map: $colors, $key: siete);
+            background: map-get($map: $colors, $key: nueve);
             text-align: center;
             font-size: 24px;
             padding: 6px;
@@ -31,7 +31,7 @@
             text-align: center;
         }
         thead{
-            background: map-get($map: $colors, $key: nueve);
+            background: map-get($map: $colors, $key: siete);
         }
         th{
             padding: 8px 4px;

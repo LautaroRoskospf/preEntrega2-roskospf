@@ -1,23 +1,68 @@
 /* Header */
 header{
-    background: $back_header;
-    nav ul{
-        @include grid(5, 0);
-        list-style: none;
-        text-align: center;
-        li{
-            height: 2.4em;
-            &:hover,
-            &:focus{
-                background: $back_hover;
+    background-color: $back_header;
+    @include flex(row, center, space-between);
+    padding: .5rem;
+    p{
+        background-color: map-get($map: $colors, $key: cuatro);
+        border: 2px solid map-get($map: $colors, $key: cuatro);
+        padding: .25rem .75rem;
+        border-radius: .2rem;
+        font-weight: bold;
+        margin-left: 15px;
+        box-shadow: $shadow;
+        &:hover{
+            background: transparent;
+            border: 2px solid map-get($map: $colors, $key: cuatro);
+        }
+        a{
+            text-decoration: none;
+            font-family: $typo_titulos;
+            color: map-get($map: $colors, $key: uno);
+        }
+    }
+    nav{
+        #check{
+            display: none;
+        }
+        label{
+            i{
+                display: none;
+                img{
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 2px;
+                }
             }
-            a{
-                text-decoration: none;
-                font-size: 1.4rem;
-                text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
-                align-items: center;
-                color: map-get($map: $colors, $key: uno);
+        }
+        ul{
+            @include flex(row, center, center);
+            list-style: none;
+            li{
+                margin-right: 1.5rem;
                 font-family: $typo_titulos;
+                font-size: 1.1rem;
+                font-weight: 600;
+                a{
+                    text-decoration: none;
+                    color: map-get($map: $colors, $key: uno);
+                    position: relative;
+                    &:after{
+                        content: "";
+                        width: 0;
+                        height: 3px;
+                        background-color: map-get($map: $colors, $key: cinco);
+                        position: absolute;
+                        bottom: 0;
+                        right: 50%;
+                        transition: all .5s;
+                        will-change: width;
+                    }
+                    &:hover:after{
+                        width: 100%;
+                        right: 0;
+                    }
+                }
             }
         }
     }

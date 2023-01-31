@@ -40,10 +40,12 @@
                     border: 0;
                     text-transform: uppercase;
                     padding: .7em;
+                    cursor: pointer;
                     &:hover, :focus{
-                        color: map-get($map: $colors, $key: dos);
-                        background: map-get($map: $colors, $key: cuatro);
-                        transition: .6s ease-out;
+                        color: map-get($map: $colors, $key: cinco);
+                        background: transparent;
+                        transition: .3s linear;
+                        font-size: 1.5em;
                         outline: 0;
                         font-weight: bold;
                     }

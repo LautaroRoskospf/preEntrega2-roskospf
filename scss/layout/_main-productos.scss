@@ -26,9 +26,11 @@
     @include grid(4,3em);
     background: map-get($map: $cristal, $key: septimo);
     padding: 20px;
+    box-shadow: $shadow;
     div{
         background: map-get($map: $cristal, $key: quinto);
         text-align: center;
+        box-shadow: $shadow;
         img{
             @include tamaño(140px, 140px);
         }
@@ -37,13 +39,17 @@
         @include tamaño(100%, auto);
         background: map-get($map: $colors, $key: siete);
         color: map-get($map: $colors, $key: uno);
-        font-weight: $typo_principal;
+        font-family: $typo_principal;
         font-size: 1.1em;
         border: none;
+        cursor: pointer;
         &:hover, :focus{
             color: map-get($map: $colors, $key: dos);
-            background: map-get($map: $colors, $key: cuatro);
-            transition: ease-out;
+            background: map-get($map: $colors, $key: seis);
+            text-transform: uppercase;
+            font-size: 1em;
+            transition: ease-out .25s;
+            border: 2px solid map-get($map: $colors, $key: cinco);
             outline: 0;
             font-weight: bold;
         }

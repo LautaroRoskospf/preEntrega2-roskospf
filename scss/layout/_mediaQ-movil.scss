@@ -1,16 +1,5 @@
 /* horizontal screen */
 @media screen and (max-width: 480px){
-    /* header */
-    header{
-        width: 50%;
-        margin: auto;
-        nav ul{
-            @include grid(1, 0);
-            li a{
-                font-size: 1em;
-            }
-        }
-    }
     /* index */
     .blackfriday{
         display: none;
@@ -25,6 +14,14 @@
         @include grid(1, 1em);
         .sections-divs img{
             @include tamaño(100px, 100px);
+        }
+    }
+    .BTN-ver-todas{
+        button{
+            width: 60%;
+            &:hover{
+                width: 80%;
+            }
         }
     }
     .index-logos p{
